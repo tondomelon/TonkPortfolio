@@ -1,59 +1,138 @@
-* {
-    box-sizing: border-box;
-}
+ * {
+     box-sizing: border-box;
+ }
 
-body {
-    width: 100%;
-    margin: 0;
-    background-color: #292323;
-    color: white;
-}
+ body {
+     width: 100%;
+     margin: 0;
+     background-color: #292323;
+     color: white;
 
-a {
-    text-decoration: none;
-    color: white;
-    font-size: ;
-}
-
-.tetx_usual {
-    font-family: avenirnextcyr-regular;
-}
-
-.text_main {
-    font-family: Comfortaa-VariableFont_wght;
-}
-
-.container {
-    margin: 0 auto;
-    max-width: 1440px;
-    padding: 0 60px;
-}
+     background-image: url("../img/Sombra_proz.png");
+     background-position: 50% top;
+     background-position: 426px 128px;
+     background-size: 100% auto;
+     /* background-attachment: fixed; */
+     /* background-size: cover; */
+     background-repeat: no-repeat;
+ }
+ }
 
 
-.head_content {
-    background-image: url("../img/ShadowPunk.JPG");
-    width: 100%;
-    height: 100;
-    border-radius: 0 0 25px 25px;
-    margin-left: 25px;
-    margin-right: 25px;
-}
+ .container {
+     margin: 0 auto;
+     max-width: 1440px;
+     padding: 0 25px;
+ }
 
-h2 {
-    margin: 0;
-    font-size: 40px;
-    font-family: Comfortaa-VariableFont_wght;
-}
+ .horizontal {
+     display: flex;
+     align-items: center;
+ }
+
+ .space-between {
+     justify-content: space-between;
+ }
+
+ .navigation_item {
+     color: white;
+     text-decoration: none;
+     font-family: "avenirnextcyr-regular";
+     font-weight: 500;
+     font-size: 32px;
+     margin: 31px;
+ }
+
+ .navigation_logo {
+     color: white;
+     text-decoration: none;
+     font-family: "Comfortaa";
+     font-weight: 500;
+     font-size: 40px;
+ }
+
+ .margins {
+     margin-left: 45px;
+     margin-right: 59px;
+ }
+
+ .header__container {
+     padding-bottom: 12px;
+     padding-top: 15px;
+ }
+
+ .header {
+     background-image: url(../img/ShadowPunk.PNG);
+     background-color: black;
+     height: 74px;
+     border-radius: 0 0 25px 25px;
+     margin-left: 25px;
+     margin-right: 25px;
+     background-size: 110% auto;
+     background-position: 0px 48%;
+ }
 
 
-.header_ride {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 17px;
-}
+ .block_on_block {
 
-.navigation_1 {
-    font-size: 32px;
-}
+     justify-content: space-between;
+     display: flex;
+     margin-top: 283px;
 
+ }
+
+
+ .aboutme_block {
+     background-color: #7EC9CE;
+     width: 326.25px;
+     height: 79.5px;
+     border-radius: 43.5px;
+     /* position: relative;
+    top: 240px;
+    left: 833px; */
+     justify-content: center;
+     display: flex;
+ }
+
+ .obomne {
+     font-family: "Comfortaa";
+     font-weight: 400;
+     font-size: 54px;
+     color: #292323;
+     align-items: center;
+     text-align: center;
+     justify-content: center;
+     display: flex;
+ }
+
+ .myphotos {
+    justify-content: center;
+     display: flex;
+
+ }
+
+ .realme_photo {
+    background-image: url("../img/me_real.JPG");
+     border-radius: 1000px;
+     width: 354px;
+     height: 354px;
+     background-size: 130%;
+     background-position: center;
+     padding: 20px;
+     border: 18px solid #7EC9CE;
+     
+
+ }
+
+ .doodleme_photo {
+     background-image: url("../img/me_drawing.JPG");
+     border-radius: 1000px;
+     width: 354px;
+     background-size: 130%;
+     background-position: center;
+    
+ }
+
+ .photoswrapper {
+    position: relative;
+ }
