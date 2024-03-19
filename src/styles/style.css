@@ -1,6 +1,10 @@
  * {
      box-sizing: border-box;
  }
+ 
+ html {
+    scroll-behavior: smooth;
+ }
 
  body {
      width: 100%;
@@ -9,15 +13,27 @@
      color: white;
 
      background-image: url("../img/Sombra_proz.png");
-     background-position: 50% top;
-     background-position: 426px 128px;
-     background-size: 100% auto;
+     background-position: 418px 128px;
+     background-size: 1536px 2052px;
      /* background-attachment: fixed; */
      /* background-size: cover; */
      background-repeat: no-repeat;
  }
- }
 
+@font-face {
+    font-family: "Avenirnext_medium";
+src: url("../fonts/AvenirNext-Medium-06.ttf");
+}
+
+@font-face {
+    font-family: "Avenirnext_regular";
+    src: url("../fonts/AvenirNext-Regular-08.ttf");
+}
+
+@font-face {
+    font-family: "Avenirnext_light";
+    src: url("../fonts/AvenirNext-UltraLight-11.ttf");
+}
 
  .container {
      margin: 0 auto;
@@ -37,11 +53,18 @@
  .navigation_item {
      color: white;
      text-decoration: none;
-     font-family: "avenirnextcyr-regular";
+     font-family: "Avenirnext_regular";
      font-weight: 500;
      font-size: 32px;
-     margin: 31px;
- }
+     margin: 16px;
+       
+}
+.anim {
+    transition: 0.3s ease-in-out;
+}
+.anim:hover {
+    transform: scale(1.1);
+}
 
  .navigation_logo {
      color: white;
@@ -51,13 +74,9 @@
      font-size: 40px;
  }
 
- .margins {
-     margin-left: 45px;
-     margin-right: 59px;
- }
+
 
  .header__container {
-     padding-bottom: 12px;
      padding-top: 15px;
  }
 
@@ -75,9 +94,9 @@
 
  .block_on_block {
 
-     justify-content: space-between;
+     /* justify-content: space-around; */
      display: flex;
-     margin-top: 283px;
+     margin-top: 99px;
 
  }
 
@@ -92,6 +111,8 @@
     left: 833px; */
      justify-content: center;
      display: flex;
+     margin-top: 184px;
+     margin-left: 433px;
  }
 
  .obomne {
@@ -106,21 +127,27 @@
  }
 
  .myphotos {
-    justify-content: center;
+     justify-content: center;
      display: flex;
 
  }
 
  .realme_photo {
-    background-image: url("../img/me_real.JPG");
+     background-image: url("../img/me_real.JPG");
      border-radius: 1000px;
      width: 354px;
      height: 354px;
-     background-size: 130%;
+     background-size: 100%;
      background-position: center;
-     padding: 20px;
-     border: 18px solid #7EC9CE;
-     
+
+
+     box-shadow: 0px 0px 0px 25px #292323;
+
+     position: absolute;
+     top: 163px;
+     left: 212px;
+
+
 
  }
 
@@ -128,11 +155,61 @@
      background-image: url("../img/me_drawing.JPG");
      border-radius: 1000px;
      width: 354px;
+     height: 354px;
      background-size: 130%;
      background-position: center;
-    
- }
+}
 
  .photoswrapper {
-    position: relative;
- }
+     position: relative;
+     margin-left: 55px;
+}
+
+
+.texts_about_me {
+    margin-top: 226px;
+    margin-left: 126px;
+    margin-right: 120px;
+    font-size: 25px;
+}
+
+.aboutme_text_head {
+font-family: "Avenirnext_medium";
+margin: 0 auto;
+}
+
+.aboutme_text {
+    font-family: "Avenirnext_regular";
+    font-weight: 100;
+    margin: 0 auto;
+}
+
+.footer {
+    margin-top: 109px;
+}
+.footer_block {
+    background-color:#484451;
+    height: 59px;
+    border-radius: 50px 50px 0 0;
+    background-size: 110% auto;
+    background-position: 0px 48%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.the_end {
+    color: #A49FAE;
+     text-decoration: none;
+     font-family: "Avenirnext_regular";
+     font-size: 23px;
+     /* margin: 42px; */
+     text-align: center;
+     align-items: center;
+}
+
+.the_end:not(:last-child) {
+    margin-right: 84px;
+}
