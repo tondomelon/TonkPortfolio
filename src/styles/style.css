@@ -1,39 +1,42 @@
  * {
      box-sizing: border-box;
  }
- 
+
  html {
-    scroll-behavior: smooth;
+     scroll-behavior: smooth;
  }
 
  body {
      width: 100%;
      margin: 0;
-     background-color: #292323;
+     background-color: #26242A;
      color: white;
 
      background-image: url("../img/Sombra_proz.png");
      background-position: 418px 128px;
      background-size: 1536px 2052px;
-     /* background-attachment: fixed; */
-     /* background-size: cover; */
      background-repeat: no-repeat;
  }
 
-@font-face {
-    font-family: "Avenirnext_medium";
-src: url("../fonts/AvenirNext-Medium-06.ttf");
-}
+ @font-face {
+     font-family: "Avenirnext_medium";
+     src: url("../fonts/AvenirNext-Medium-06.ttf");
+ }
 
-@font-face {
-    font-family: "Avenirnext_regular";
-    src: url("../fonts/AvenirNext-Regular-08.ttf");
-}
+ @font-face {
+     font-family: "Avenirnext_regular";
+     src: url("../fonts/AvenirNext-Regular-08.ttf");
+ }
 
-@font-face {
-    font-family: "Avenirnext_light";
-    src: url("../fonts/AvenirNext-UltraLight-11.ttf");
-}
+ @font-face {
+     font-family: "Avenirnext_light";
+     src: url("../fonts/AvenirNext-UltraLight-11.ttf");
+ }
+
+ @font-face {
+     font-family: "Avenirnext_italic";
+     src: url("../fonts/AvenirNext-Italic-05.ttf");
+ }
 
  .container {
      margin: 0 auto;
@@ -56,15 +59,40 @@ src: url("../fonts/AvenirNext-Medium-06.ttf");
      font-family: "Avenirnext_regular";
      font-weight: 500;
      font-size: 32px;
-     margin: 16px;
-       
-}
-.anim {
-    transition: 0.3s ease-in-out;
-}
-.anim:hover {
-    transform: scale(1.1);
-}
+     display: block;
+
+ }
+
+ .navigation_item:not(:last-child) {
+     margin-right: 31px;
+ }
+
+ .navigation_right {
+     display: flex;
+     align-items: center;
+ }
+
+ .anim {
+     transition: 0.3s ease-in-out;
+ }
+
+ .anim:hover {
+     transform: scale(1.1);
+ }
+
+ .list {
+     list-style-type: none;
+ }
+
+ .list:not(:last-child) {
+     margin-right: 31px;
+ }
+
+ .list_for_navigation {
+     display: flex;
+     margin: 0;
+ }
+
 
  .navigation_logo {
      color: white;
@@ -75,44 +103,43 @@ src: url("../fonts/AvenirNext-Medium-06.ttf");
  }
 
 
-
  .header__container {
-     padding-top: 15px;
+     padding-right: 59px;
  }
 
  .header {
-     background-image: url(../img/ShadowPunk.PNG);
+     background-image: url(../img/ShadowPunk.png);
      background-color: black;
-     height: 74px;
      border-radius: 0 0 25px 25px;
      margin-left: 25px;
      margin-right: 25px;
      background-size: 110% auto;
      background-position: 0px 48%;
+     position: sticky;
+     top: 0;
+     z-index: 1;
+     padding: 17px 0 12px;
  }
 
 
  .block_on_block {
 
-     /* justify-content: space-around; */
+     justify-content: space-between;
      display: flex;
-     margin-top: 99px;
-
+     padding-top: 99px;
+     align-items: flex-end;
  }
 
 
  .aboutme_block {
      background-color: #7EC9CE;
-     width: 326.25px;
-     height: 79.5px;
-     border-radius: 43.5px;
-     /* position: relative;
-    top: 240px;
-    left: 833px; */
+     border-radius: 44px;
      justify-content: center;
      display: flex;
-     margin-top: 184px;
-     margin-left: 433px;
+     margin-right: 222px;
+     margin-bottom: 90px;
+     padding-right: 18px;
+     padding-left: 17px;
  }
 
  .obomne {
@@ -124,6 +151,8 @@ src: url("../fonts/AvenirNext-Medium-06.ttf");
      text-align: center;
      justify-content: center;
      display: flex;
+     margin: 0;
+     padding: 14px 0 5px;
  }
 
  .myphotos {
@@ -133,83 +162,281 @@ src: url("../fonts/AvenirNext-Medium-06.ttf");
  }
 
  .realme_photo {
-     background-image: url("../img/me_real.JPG");
+     background-image: url("../img/me_real.jpg");
      border-radius: 1000px;
      width: 354px;
      height: 354px;
      background-size: 100%;
      background-position: center;
-
-
      box-shadow: 0px 0px 0px 25px #292323;
-
      position: absolute;
      top: 163px;
      left: 212px;
-
-
-
  }
 
  .doodleme_photo {
-     background-image: url("../img/me_drawing.JPG");
+     background-image: url("../img/me_drawing.jpg");
      border-radius: 1000px;
      width: 354px;
      height: 354px;
      background-size: 130%;
      background-position: center;
-}
+ }
 
  .photoswrapper {
      position: relative;
      margin-left: 55px;
-}
+ }
 
 
-.texts_about_me {
-    margin-top: 226px;
-    margin-left: 126px;
-    margin-right: 120px;
-    font-size: 25px;
-}
+ .texts_about_me {
+     margin-top: 259px;
+     margin-left: 126px;
+     margin-right: 120px;
+     font-size: 25px;
+     width: 1144px;
+ }
 
-.aboutme_text_head {
-font-family: "Avenirnext_medium";
-margin: 0 auto;
-}
+ .aboutme_text_head {
+     font-family: "Avenirnext_medium";
+     margin: 0 auto;
 
-.aboutme_text {
-    font-family: "Avenirnext_regular";
-    font-weight: 100;
-    margin: 0 auto;
-}
+ }
 
-.footer {
-    margin-top: 109px;
-}
-.footer_block {
-    background-color:#484451;
-    height: 59px;
-    border-radius: 50px 50px 0 0;
-    background-size: 110% auto;
-    background-position: 0px 48%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-}
+ .aboutme_text {
+     font-family: "Avenirnext_regular";
+     font-weight: 100;
+     margin: 0 auto;
+ }
 
-.the_end {
-    color: #A49FAE;
+
+ .footer_block {
+     background-color: #484451;
+     height: 59px;
+     border-radius: 50px 50px 0 0;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+ }
+
+ .the_end {
+     color: #A49FAE;
      text-decoration: none;
      font-family: "Avenirnext_regular";
      font-size: 23px;
      /* margin: 42px; */
      text-align: center;
      align-items: center;
-}
+ }
 
-.the_end:not(:last-child) {
-    margin-right: 84px;
-}
+ .the_end:not(:last-child) {
+     margin-right: 84px;
+ }
+
+ .works {
+     margin-top: 149px;
+ }
+
+ .moiraboty {
+     font-family: "Comfortaa";
+     font-weight: 400;
+     font-size: 54px;
+     color: #292323;
+     align-items: center;
+     text-align: center;
+     justify-content: center;
+     display: inline-flex;
+     margin: 0;
+     padding-top: 17px;
+     padding-bottom: 7px;
+
+     background-color: #E5507D;
+     border-radius: 44px;
+     margin-left: calc(160px - 25px);
+     padding-right: 32px;
+     padding-left: 31px;
+ }
+
+ .myworks_text {
+     font-family: "Avenirnext_regular";
+     font-weight: 100;
+     font-size: 25px;
+     margin: 0 auto;
+     margin-top: 76px;
+     margin-left: calc(774px - 25px);
+     width: 511px;
+ }
+
+ .a_few_of_my_works_text {
+     font-family: "Avenirnext_medium";
+     font-size: 32px;
+     align-items: center;
+     text-align: center;
+     justify-content: center;
+     display: inline-flex;
+     align-self: center;
+
+     background-color: #E5507D;
+     border-radius: 58px;
+     /* margin-left: calc(160px - 25px); */
+     padding-right: 19px;
+     padding-left: 19px;
+     padding-top: 3px;
+     padding-bottom: 3px;
+     margin-top: 112px;
+ }
+
+ .stabilization {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+ }
+
+ .aboutmyworks_text {
+     font-family: "Avenirnext_regular";
+     font-weight: 100;
+     font-size: 25px;
+     margin: 0 auto;
+     margin-top: 8px;
+     margin-left: calc(154px - 25px);
+     width: 1132px;
+ }
+
+ .img_settings {
+     width: 200px;
+ }
+
+ .img_group {
+     margin-top: 55px;
+ }
+
+ .img_settings:not(:last-child) {
+     margin-right: 11px;
+ }
+
+ .rooms {
+     width: 351px;
+ }
+
+ .wrapper {
+     display: flex;
+     justify-content: center;
+     margin-top: 78px;
+     align-items: center;
+     width: 100%;
+ }
+
+ .column_1 {
+     margin-right: 77px;
+ }
+
+ .img_group {
+     height: 286px;
+     display: flex;
+     align-items: center;
+ }
+
+ .text_under_pic {
+     font-family: "Avenirnext_medium";
+     margin: 0 auto;
+     font-size: 24px;
+     margin-top: 49px;
+     text-align: center;
+ }
+
+ .contacting_with_me {
+     display: flex;
+     justify-content: space-between;
+     margin-right: 254px;
+     margin-left: calc(154px - 25px);
+
+ }
+
+ .svyazatsya_so_mnoi {
+     font-family: "Comfortaa";
+     font-weight: 400;
+     font-size: 51px;
+     color: #292323;
+     align-items: center;
+     text-align: center;
+     justify-content: center;
+     display: inline-flex;
+     margin: 0;
+     padding-top: 17px;
+     padding-bottom: 7px;
+     background-color: #E3AD5C;
+     border-radius: 44px;
+     padding-right: 222px;
+     padding-right: 19px;
+     padding-left: 20px;
+ }
+
+ .edit_text {
+     font-size: 25px;
+     width: 511px;
+     margin-top: 106px;
+ }
+
+ .like_myworks {
+     font-family: "Avenirnext_regular";
+     margin: 0;
+ }
+
+ .like_myworks_head {
+     font-family: "Avenirnext_medium";
+     margin: 0;
+ }
+
+ .contacts {
+     padding: 169px 0 109px;
+ }
+
+ .Vio_background {
+     opacity: 10%;
+     width: 1657px;
+ }
+
+ .edit_form {
+     font-family: "Avenirnext_italic";
+     font-size: 23px;
+     width: 503px;
+     border-radius: 18px;
+     padding-left: 19px;
+     color: #292323;
+     text-decoration-color: #A49FAE;
+     border: none;
+     display: block;
+     background-color: #D9D9D9;
+
+ }
+
+ .form_for_send {
+    padding-left: calc(154px - 25px);
+    margin-right: calc(783px - 25px);
+    margin-top: 60px;
+ }
+
+ .edit_form:not(:last-child) {
+     margin-bottom: 19px;
+ }
+
+ .stroke1,
+ .stroke2 {
+     height: 38px;
+ }
+
+ .stroke3 {
+     resize: none;
+     height: 142px;
+     padding-top: 10px;
+ }
+
+ ::placeholder {
+    color: #A49FAE;
+ }
+
+ .buttons {
+    
+ }

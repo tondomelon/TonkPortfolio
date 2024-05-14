@@ -12,14 +12,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
-  
+
 </head>
 
 <body>
 
     <header class="header">
-
-        <div class="background"></div>
 
         <div class="container horizontal space-between header__container">
 
@@ -27,9 +25,11 @@
                 <a class="navigation_logo" href="">Domelon</a>
             </nav>
             <nav class="navigation_right">
-                <a class="navigation_item anim" href="#targetBlock">обо мне</a>  
-                <a class="navigation_item anim" href="">мои работы</a>
-                <a class="navigation_item anim" href="">связаться со мной</a>
+                <ul class="list_for_navigation">
+                    <li class="list"> <a class="navigation_item anim" href="#targetBlock">обо мне</a> </li>
+                    <li class="list"> <a class="navigation_item anim" href="#targetBlock_2">мои работы</a> </li>
+                    <li class="list"> <a class="navigation_item anim" href="#targetBlock_3">связаться со мной</a> </li>
+                </ul>
             </nav>
 
         </div>
@@ -53,30 +53,123 @@
             </div>
 
 
-<div class="texts_about_me">
-            <p class="aboutme_text_head">Привет, меня зовут Domelon aka Тонконог!</p>
-            <p class="aboutme_text">Я родился и вырос в Новосибирске, мне 19 лет и я просто обожаю рисовать :) </br> </br>
+            <div class="texts_about_me">
+                <p class="aboutme_text_head">Привет, меня зовут Domelon aka Тонконог!</p>
+                <p class="aboutme_text">Я родился и вырос в Новосибирске, мне 19 лет и я просто обожаю рисовать :) </br>
+                    </br>
 
-                Моим любимым занятием также является ведение социальных сетей, обучение чему-то новому, а ещё я люблю
-                вкусно кушать и ненавижу готовить. </br>
-                Поскольку я увлечен рисованием, я стараюсь развиваться в разных направлениях творчества (Графический
-                дизайн, иллюстративный дизайн, веб дизайн, 3D моделирование, анимация, монтаж, художник по фонам,
-                концепт-арт, дизайн персонажей). Всего понемножку!</p>
+                    Моим любимым занятием также является ведение социальных сетей, обучение чему-то новому, а ещё я
+                    люблю
+                    вкусно кушать и ненавижу готовить. </br>
+                    Поскольку я увлечен рисованием, я стараюсь развиваться в разных направлениях творчества (Графический
+                    дизайн, иллюстративный дизайн, веб дизайн, 3D моделирование, анимация, монтаж, художник по фонам,
+                    концепт-арт, дизайн персонажей). Всего понемножку!</p>
             </div>
 
 
         </section>
 
+        <section class="my_works">
+
+
+
+        </section>
+
+        <section class="works">
+            <div class="container stabilization">
+                <h2 class="moiraboty" id="targetBlock_2"> МОИ РАБОТЫ</h2>
+                <p class="myworks_text">Не смотря на то, что я увлекаюсь многими направлениями, я в первую очередь
+                    художник-иллюстратор.</p>
+                <p class="a_few_of_my_works_text">Вот немного моих работ!</p>
+                <p class="aboutmyworks_text"> Основной упор я стараюсь делать на персонажах в окружении. Мне нравится
+                    рисовать масштабные фоны, особенно городские пейзажи. </br>
+                    Мои навыки подходят для иллюстрирования книг, обложек или оформления аватарок профиля. </br> </br>
+                    Кроме того, я неплохо подхожу на рисование 2D фонов в анимационные проекты. Плоская стилистика
+                    отлично подойдет для мерча (например наклеек, значков, брелков, открыток).
+                </p>
+
+
+                <div class="wrapper">
+
+                    <div class="column_1">
+
+                        <div class="img_group">
+                            <img class="img_settings" src="/src/img/stickers_1.jpg">
+                            <img class="img_settings" src="/src/img/stickers_2.jpg">
+                        </div>
+
+
+                        <p class="text_under_pic">Наклейки</p>
+
+                    </div>
+
+                    <div class="column_2">
+
+                        <div class="img_group">
+
+                            <img class="rooms" src="/src/img/room_bright.png">
+                            <img class="rooms" src="/src/img/room_dark.png">
+                        </div>
+
+
+                        <p class="text_under_pic">Комната главного героя</p>
+
+                    </div>
+                    <!-- Эти дивы форматировать в строку, отредактировать расстояние между комнат путем обрезания картинки. Прописать текст. -->
+
+                </div>
+
+
+            </div>
+
+            </div>
+
+        </section>
+
+        <section class="contacts">
+            <div class="container">
+                <div class="contacting_with_me ">
+                    <div class="edit_text">
+                        <p class="like_myworks_head">Понравились работы?</p>
+                        <p class="like_myworks">Если хотите сотрудничать со мной, оставьте заявку ниже со своим
+                            предложением!</p>
+                    </div>
+                    <div class="contactme_block" id="targetBlock_3">
+                        <h2 class="svyazatsya_so_mnoi"> СВЯЗАТЬСЯ </br> СО МНОЙ</h2>
+                    </div>
+
+                </div>
+                <div class="form_for_send ">
+                    <input class="edit_form stroke1" placeholder="Ваше имя" />
+                    <input class="edit_form stroke2" placeholder="Ваш e-mail" />
+                    <textarea class="edit_form stroke3" name="ph" placeholder="Сообщение"></textarea>
+                    <div class="buttons">
+                        <button class="pink_one">
+                            <p class="clean_button">Отчистить</p>
+                        </button>
+                        <button class="yellow_one">
+                            <p class="send_button">Отправить</p>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
+
     <footer class="footer">
-<div class="footer_block">
-    <a class="the_end" href="#">©2024</a>
-    <a class="the_end" href="#">Telegram</a>
-    <a class="the_end" href="#">Вконтакте</a>
-    <a class="the_end" href="#">domelonton@gmail.com</a>
-</div>
+        <div class="footer_block">
+            <a class="the_end">©2024</a>
+            <a class="the_end" href="#">Telegram</a>
+            <a class="the_end" href="#">Вконтакте</a>
+            <a class="the_end" href="mailto: domelonton@gmail.com">domelonton@gmail.com</a>
+        </div>
     </footer>
+
+    <img class="Vio_background" src="./src/img/Vio.png">
+
 
 </body>
 
