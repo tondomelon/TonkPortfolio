@@ -33,7 +33,6 @@
             </nav>
 
         </div>
-        </div>
 
     </header>
 
@@ -55,12 +54,13 @@
 
             <div class="texts_about_me">
                 <p class="aboutme_text_head">Привет, меня зовут Domelon aka Тонконог!</p>
-                <p class="aboutme_text">Я родился и вырос в Новосибирске, мне 19 лет и я просто обожаю рисовать :) </br>
-                    </br>
+                <p class="aboutme_text">Я родился и вырос в Новосибирске, мне 19 лет и я просто обожаю рисовать :) </p>
 
+
+                <p class="aboutme_text editing">
                     Моим любимым занятием также является ведение социальных сетей, обучение чему-то новому, а ещё я
                     люблю
-                    вкусно кушать и ненавижу готовить. </br>
+                    вкусно кушать и ненавижу готовить. <br>
                     Поскольку я увлечен рисованием, я стараюсь развиваться в разных направлениях творчества (Графический
                     дизайн, иллюстративный дизайн, веб дизайн, 3D моделирование, анимация, монтаж, художник по фонам,
                     концепт-арт, дизайн персонажей). Всего понемножку!</p>
@@ -81,10 +81,78 @@
                 <p class="myworks_text">Не смотря на то, что я увлекаюсь многими направлениями, я в первую очередь
                     художник-иллюстратор.</p>
                 <p class="a_few_of_my_works_text">Вот немного моих работ!</p>
+
+                <!-- Слайдер -->
+                <div class="slider-container">
+                    <div class="slider">
+                        <img onclick="window.dialog1.showModal()" src="./src/img/Aura.jpg" alt="Image_1">
+                        <img onclick="window.dialog2.showModal()" src="./src/img/Mandy_chester.jpg" alt="Image_2">
+                        <img onclick="window.dialog3.showModal()" src="./src/img/Summertime.jpg" alt="Image_3">
+                        <img onclick="window.dialog4.showModal()" src="./src/img/Witch_town.jpg" alt="Image_4">
+                        <img onclick="window.dialog5.showModal()" src="./src/img/prayer.jpg" alt="Image_5">
+                        <img onclick="window.dialog6.showModal()" src="./src/img/Miko.jpg" alt="Image_6">
+                        <img onclick="window.dialog7.showModal()" src="./src/img/Bodygold.jpg" alt="Image_7">
+                    </div>
+
+                </div>
+
+                <dialog id="dialog1">
+                    <img class="dialogimg" src="./src/img/Aura.jpg" alt="Image_1">
+                    <button type="button" class="closed" onclick="window.dialog1.close()">
+                        ×
+                    </button>
+                </dialog>
+
+                <dialog id="dialog2">
+                    <img class="dialogimg" src="./src/img/Mandy_chester.jpg" alt="Image_2">
+                    <button type="button" class="closed" onclick="window.dialog2.close()">
+                        ×
+                    </button>
+                </dialog>
+
+                <dialog id="dialog3">
+                    <img class="dialogimg" src="./src/img/Summertime.jpg" alt="Image_3">
+                    <button type="button" class="closed" onclick="window.dialog3.close()">
+                        ×
+                    </button>
+                </dialog>
+
+                <dialog id="dialog4">
+                    <img class="dialogimg" src="./src/img/Witch_town.jpg" alt="Image_4">
+                    <button type="button" class="closed" onclick="window.dialog4.close()">
+                        ×
+                    </button>
+                </dialog>
+
+                <dialog id="dialog5">
+                    <img class="dialogimg" src="./src/img/prayer.jpg" alt="Image_5">
+                    <button type="button" class="closed" onclick="window.dialog5.close()">
+                        ×
+                    </button>
+                </dialog>
+
+                <dialog id="dialog6">
+                    <img class="dialogimg" src="./src/img/Miko.jpg" alt="Image_6">
+                    <button type="button" class="closed" onclick="window.dialog6.close()">
+                        ×
+                    </button>
+                </dialog>
+
+                <dialog id="dialog7">
+                    <img class="dialogimg" src="./src/img/Bodygold.jpg" alt="Image_7">
+                    <button type="button" class="closed" onclick="window.dialog7.close()">
+                        ×
+                    </button>
+                </dialog>
+
+                <!-- Конец слайдера -->
+
+
                 <p class="aboutmyworks_text"> Основной упор я стараюсь делать на персонажах в окружении. Мне нравится
-                    рисовать масштабные фоны, особенно городские пейзажи. </br>
-                    Мои навыки подходят для иллюстрирования книг, обложек или оформления аватарок профиля. </br> </br>
-                    Кроме того, я неплохо подхожу на рисование 2D фонов в анимационные проекты. Плоская стилистика
+                    рисовать масштабные фоны, особенно городские пейзажи. <br>
+                    Мои навыки подходят для иллюстрирования книг, обложек или оформления аватарок профиля.</p>
+                <p class="aboutmyworks_text edition"> Кроме того, я неплохо подхожу на рисование 2D фонов в анимационные
+                    проекты. Плоская стилистика
                     отлично подойдет для мерча (например наклеек, значков, брелков, открыток).
                 </p>
 
@@ -94,8 +162,8 @@
                     <div class="column_1">
 
                         <div class="img_group">
-                            <img class="img_settings" src="/src/img/stickers_1.jpg">
-                            <img class="img_settings" src="/src/img/stickers_2.jpg">
+                            <img class="img_settings" src="./src/img/stickers_1.jpg" alt="stickers_with_myOC">
+                            <img class="img_settings" src="./src/img/stickers_2.jpg" alt="stickers_with_candys">
                         </div>
 
 
@@ -107,8 +175,8 @@
 
                         <div class="img_group">
 
-                            <img class="rooms" src="/src/img/room_bright.png">
-                            <img class="rooms" src="/src/img/room_dark.png">
+                            <img class="rooms" src="./src/img/room_bright.png" alt="Day_room_for_character">
+                            <img class="rooms" src="./src/img/room_dark.png" alt="Night_room_for_character">
                         </div>
 
 
@@ -122,11 +190,11 @@
 
             </div>
 
-            </div>
 
         </section>
 
         <section class="contacts">
+            <div class="Vio_background"></div>
             <div class="container">
                 <div class="contacting_with_me ">
                     <div class="edit_text">
@@ -135,24 +203,27 @@
                             предложением!</p>
                     </div>
                     <div class="contactme_block" id="targetBlock_3">
-                        <h2 class="svyazatsya_so_mnoi"> СВЯЗАТЬСЯ </br> СО МНОЙ</h2>
+                        <h2 class="svyazatsya_so_mnoi"> СВЯЗАТЬСЯ <br> СО МНОЙ</h2>
                     </div>
 
                 </div>
-                <div class="form_for_send ">
-                    <input class="edit_form stroke1" placeholder="Ваше имя" />
-                    <input class="edit_form stroke2" placeholder="Ваш e-mail" />
-                    <textarea class="edit_form stroke3" name="ph" placeholder="Сообщение"></textarea>
-                    <div class="buttons">
-                        <button class="pink_one">
-                            <p class="clean_button">Отчистить</p>
-                        </button>
-                        <button class="yellow_one">
-                            <p class="send_button">Отправить</p>
-                        </button>
+                <form class="form">
+                    <div class="form_for_send ">
+                        <input class="edit_form stroke1" placeholder="Ваше имя" name="name">
+                        <input class="edit_form stroke2" placeholder="Ваш e-mail" name="email">
+                        <textarea class="edit_form stroke3" name="ph" placeholder="Сообщение"></textarea>
+                        <div class="buttons">
+                            <button type="reset" class="pink_one clean_button">
+                                <span class="clean_button">Отчистить</span>
+                            </button>
+                            <button type="submit" class="yellow_one send_button">
+                                <span class="send_button">Отправить</span>
+                            </button>
 
+                        </div>
                     </div>
-                </div>
+                </form>
+
             </div>
         </section>
 
@@ -162,14 +233,25 @@
     <footer class="footer">
         <div class="footer_block">
             <a class="the_end">©2024</a>
-            <a class="the_end" href="#">Telegram</a>
-            <a class="the_end" href="#">Вконтакте</a>
-            <a class="the_end" href="mailto: domelonton@gmail.com">domelonton@gmail.com</a>
+            <a class="the_end" target="_blank" href="https://t.me/Tonkonogdom">Telegram</a>
+            <a class="the_end" target="_blank" href="https://vk.com/domelonno">Вконтакте</a>
+            <a class="the_end" href="mailto:domelonton@gmail.com">domelonton@gmail.com</a>
         </div>
     </footer>
 
-    <img class="Vio_background" src="./src/img/Vio.png">
 
+
+    <script>
+
+        const links = [].slice.call(document.querySelectorAll(".navigation_item")); // выбираем все ссылки с классом navigation_item в шапке
+        links.forEach(e => { // перебираем ссылки по-очереди
+            e.addEventListener("click", function (link) { // при клике на каждую ссылку будет выполнятся функция ниже
+               const selector = link.target.getAttribute("href"); // вытаскиваем селектор, например #targetBlock
+              const section = document.querySelector(selector); // получаем блок к котрому скролим, например <div class="block_on_block container" id="targetBlock">
+           section.scrollIntoViewIfNeeded('center'); // скроллим к блоку
+        });
+            })
+        </script>
 
 </body>
 
