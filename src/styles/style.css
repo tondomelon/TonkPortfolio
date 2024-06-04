@@ -91,6 +91,7 @@
  .list_for_navigation {
      display: flex;
      margin: 0;
+     padding: 0;
  }
 
 
@@ -100,25 +101,20 @@
      font-family: "Comfortaa";
      font-weight: 500;
      font-size: 40px;
+     
  }
 
-
- .header__container {
-     padding-right: 59px;
- }
 
  .header {
      background-image: url(../img/ShadowPunk.png);
      background-color: black;
      border-radius: 0 0 25px 25px;
-     margin-left: 25px;
-     margin-right: 25px;
      background-size: 110% auto;
      background-position: 0px 48%;
      position: sticky;
      top: 0;
      z-index: 1;
-     padding: 17px 0 12px;
+     padding: 17px 45px 12px;
  }
 
 
@@ -191,7 +187,7 @@
 
  .texts_about_me {
      margin-top: 259px;
-     margin-left: 126px;
+     margin-left: 151px;
      margin-right: 120px;
      font-size: 25px;
      width: 1144px;
@@ -210,7 +206,7 @@
  }
 
  .editing {
-    margin-top: 44px;
+    margin-top: 54px;
  }
 
 
@@ -290,7 +286,7 @@
      padding-top: 3px;
      padding-bottom: 3px;
      margin-top: 112px;
-     margin-bottom: 44px;
+     margin-bottom: 34px;
  }
 
 
@@ -305,7 +301,8 @@
     display: flex;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding-bottom: 49px;
+    /* padding-bottom: 49px; */
+    margin-bottom: 49px;
     
 }
 .slider {
@@ -384,9 +381,7 @@ dialog[open] {
      width: 200px;
  }
 
- .img_group {
-     margin-top: 55px;
- }
+ 
 
  .img_settings:not(:last-child) {
      margin-right: 11px;
@@ -425,7 +420,7 @@ dialog[open] {
  .contacting_with_me {
      display: flex;
      justify-content: space-between;
-     margin-right: 254px;
+     margin-right: calc(254px - 25px);
      margin-left: calc(154px - 25px);
 
  }
@@ -481,7 +476,7 @@ dialog[open] {
      color: #292323;
      text-decoration-color: #A49FAE;
      border: none;
-     display: block;
+     /* display: block; */
      background-color: #D9D9D9;
 
  }
