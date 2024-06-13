@@ -190,7 +190,8 @@
      margin-left: 151px;
      margin-right: 120px;
      font-size: 25px;
-     width: 1144px;
+     /* width: 1144px; */
+     max-width: 1114px;
  }
 
  .aboutme_text_head {

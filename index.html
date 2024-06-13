@@ -22,7 +22,7 @@
         <div class="container horizontal space-between">
 
             <nav class="navigation_left">
-                <a class="navigation_logo" href="">Domelon</a>
+                <a class="navigation_logo" href="#">Domelon</a>
             </nav>
             <nav class="navigation_right">
                 <ul class="list_for_navigation">
@@ -69,11 +69,7 @@
 
         </section>
 
-        <section class="my_works">
-
-
-
-        </section>
+       
 
         <section class="works">
             <div class="container stabilization">
@@ -162,8 +158,8 @@
                     <div class="column_1">
 
                         <div class="img_group">
-                            <img class="img_settings" src="./src/img/stickers_1.jpg" alt="stickers_with_myOC">
-                            <img class="img_settings" src="./src/img/stickers_2.jpg" alt="stickers_with_candys">
+                            <img class="img_settings" src="./src/img/stickers_1.jpg" alt="Стикерпак_с_моими_персонажами">
+                            <img class="img_settings" src="./src/img/stickers_2.jpg" alt="Стикерпак_со_сладостями">
                         </div>
 
 
@@ -175,8 +171,8 @@
 
                         <div class="img_group">
 
-                            <img class="rooms" src="./src/img/room_bright.png" alt="Day_room_for_character">
-                            <img class="rooms" src="./src/img/room_dark.png" alt="Night_room_for_character">
+                            <img class="rooms" src="./src/img/room_bright.png" alt="Комната_главного_героя_день">
+                            <img class="rooms" src="./src/img/room_dark.png" alt="Комната_главного_героя_ночь">
                         </div>
 
 
@@ -232,7 +228,7 @@
 
     <footer class="footer">
         <div class="footer_block">
-            <a class="the_end">©2024</a>
+            <span class="the_end">©2024</span>
             <a class="the_end" target="_blank" href="https://t.me/Tonkonogdom">Telegram</a>
             <a class="the_end" target="_blank" href="https://vk.com/domelonno">Вконтакте</a>
             <a class="the_end" href="mailto:domelonton@gmail.com">domelonton@gmail.com</a>
@@ -246,7 +242,8 @@
         const links = [].slice.call(document.querySelectorAll(".navigation_item")); // выбираем все ссылки с классом navigation_item в шапке
         links.forEach(e => { // перебираем ссылки по-очереди
             e.addEventListener("click", function (link) { // при клике на каждую ссылку будет выполнятся функция ниже
-               const selector = link.target.getAttribute("href"); // вытаскиваем селектор, например #targetBlock
+                link.preventDefault();
+                const selector = link.target.getAttribute("href"); // вытаскиваем селектор, например #targetBlock
               const section = document.querySelector(selector); // получаем блок к котрому скролим, например <div class="block_on_block container" id="targetBlock">
            section.scrollIntoViewIfNeeded('center'); // скроллим к блоку
         });
