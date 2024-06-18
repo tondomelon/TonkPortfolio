@@ -69,7 +69,7 @@
 
         </section>
 
-       
+
 
         <section class="works">
             <div class="container stabilization">
@@ -82,12 +82,18 @@
                 <div class="slider-container">
                     <div class="slider">
                         <img onclick="window.dialog1.showModal()" src="./src/img/Aura.jpg" alt="Обложка журнала">
-                        <img onclick="window.dialog2.showModal()" src="./src/img/Mandy_chester.jpg" alt="Менди и Честер бравлстарс">
-                        <img onclick="window.dialog3.showModal()" src="./src/img/Summertime.jpg" alt="Двое друзей едут на машине летом">
-                        <img onclick="window.dialog4.showModal()" src="./src/img/Witch_town.jpg" alt="Ведьмочка в снежном сити">
-                        <img onclick="window.dialog5.showModal()" src="./src/img/prayer.jpg" alt="Девушка молится у статути">
-                        <img onclick="window.dialog6.showModal()" src="./src/img/Miko.jpg" alt="Мико играет в компьютер">
-                        <img onclick="window.dialog7.showModal()" src="./src/img/Bodygold.jpg" alt="Девушка лежит в цветах">
+                        <img onclick="window.dialog2.showModal()" src="./src/img/Mandy_chester.jpg"
+                            alt="Менди и Честер бравлстарс">
+                        <img onclick="window.dialog3.showModal()" src="./src/img/Summertime.jpg"
+                            alt="Двое друзей едут на машине летом">
+                        <img onclick="window.dialog4.showModal()" src="./src/img/Witch_town.jpg"
+                            alt="Ведьмочка в снежном сити">
+                        <img onclick="window.dialog5.showModal()" src="./src/img/prayer.jpg"
+                            alt="Девушка молится у статути">
+                        <img onclick="window.dialog6.showModal()" src="./src/img/Miko.jpg"
+                            alt="Мико играет в компьютер">
+                        <img onclick="window.dialog7.showModal()" src="./src/img/Bodygold.jpg"
+                            alt="Девушка лежит в цветах">
                     </div>
 
                 </div>
@@ -158,7 +164,8 @@
                     <div class="column_1">
 
                         <div class="img_group">
-                            <img class="img_settings" src="./src/img/stickers_1.jpg" alt="Стикерпак_с_моими_персонажами">
+                            <img class="img_settings" src="./src/img/stickers_1.jpg"
+                                alt="Стикерпак_с_моими_персонажами">
                             <img class="img_settings" src="./src/img/stickers_2.jpg" alt="Стикерпак_со_сладостями">
                         </div>
 
@@ -179,7 +186,6 @@
                         <p class="text_under_pic">Комната главного героя</p>
 
                     </div>
-                    
                 </div>
 
 
@@ -243,11 +249,11 @@
             e.addEventListener("click", function (link) { // при клике на каждую ссылку будет выполнятся функция ниже
                 link.preventDefault();
                 const selector = link.target.getAttribute("href"); // вытаскиваем селектор, например #targetBlock
-              const section = document.querySelector(selector); // получаем блок к котрому скролим, например <div class="block_on_block container" id="targetBlock">
-           section.scrollIntoViewIfNeeded('center'); // скроллим к блоку
-        });
-            })
-        </script>
+                const section = document.querySelector(selector); // получаем блок к котрому скролим, например <div class="block_on_block container" id="targetBlock">
+                section.scrollIntoViewIfNeeded('center'); // скроллим к блоку
+            });
+        })
+    </script>
 
 
 

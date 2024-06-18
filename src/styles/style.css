@@ -190,7 +190,6 @@
     margin-left: auto;
     margin-right: auto;
     font-size: 25px;
-    /* width: 1144px; */
     max-width: 1144px;
  }
 
@@ -281,7 +280,6 @@
 
      background-color: #E5507D;
      border-radius: 58px;
-     /* margin-left: calc(160px - 25px); */
      padding-right: 19px;
      padding-left: 19px;
      padding-top: 3px;
@@ -302,7 +300,6 @@
     display: flex;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* padding-bottom: 49px; */
     margin-bottom: 49px;
     
 }
@@ -327,7 +324,6 @@ dialog {
 
 dialog::backdrop {
     background-color: rgba(0, 0, 0, 0.6);
-    filter: background-blur(10px);
 }
 
 dialog[open] {
@@ -346,10 +342,12 @@ dialog[open] {
     right: 15px;
     font-size: 50px;
     color: white;
-    
+    cursor: pointer;
 }
 
-
+.slider img {
+    cursor: pointer;
+}
 /* Конец слайдера */
 
 
