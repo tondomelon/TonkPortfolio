@@ -186,12 +186,12 @@
 
 
  .texts_about_me {
-     margin-top: 259px;
-     margin-left: 151px;
-     margin-right: 120px;
-     font-size: 25px;
-     /* width: 1144px; */
-     max-width: 1114px;
+    margin-top: 259px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    /* width: 1144px; */
+    max-width: 1144px;
  }
 
  .aboutme_text_head {
@@ -577,3 +577,24 @@ dialog[open] {
 
 }
 
+.slider-container{
+    padding-bottom:12px;
+  }
+  
+  .slider-container::-webkit-scrollbar-track {
+      background-color: transparent;
+      border-radius: 5px;
+  }
+  
+  .slider-container::-webkit-scrollbar {
+    height:8px;
+      background-color: transparent;
+  
+  }
+  
+  .slider-container::-webkit-scrollbar-thumb {
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      background-color: white;
+    cursor:grab;
+  }
